@@ -1,0 +1,13 @@
+{
+    "vscode": {
+        "win": "https://vscode.cdn.azure.cn/stable/c47d83b293181d9be64f27ff093689e8e7aed054/VSCodeUserSetup-x64-1.42.1.exe",
+        "mac": "",
+        "linux": ""
+    },
+    "extensions": [
+        {
+            "name": "",
+            "source": ""
+        }
+    ]
+}

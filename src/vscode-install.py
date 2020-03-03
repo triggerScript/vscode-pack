@@ -2,8 +2,9 @@ from os import listdir, system
 from os.path import isfile, join, dirname
 
 scriptDir = dirname(__file__)
-dirPath = join(scriptDir, '../packages/extensions')
+extensionsPath = '../packages/extensions'
+dirPath = join(scriptDir, extensionsPath)
 extensionFiles = [f for f in listdir(dirPath) if isfile(join(dirPath, f))]
 
 for extensionFile in extensionFiles:
-    system('cd {} && code --install-extension {}'.format(dirPath, extensionFile))
+    system('code --install-extension {}/{}'.format(dirPath, extensionFile))
